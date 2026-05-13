@@ -1,5 +1,6 @@
 {% set name = "geoagent" %}
-{% set version = "0.2.0" %}
+{% set version = "1.8.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/geoagent-{{ version }}.tar.gz
-  sha256: aa17c704c842b7cd719f86a4fea289e0b4e8dfa66b2445612af9a991fca1f22d
+  sha256: b0c4498298b0d12cb967b3e23da3f347bbec8d7c186709e3e39499370bbb2c7e
 
 build:
   noarch: python
@@ -24,24 +25,21 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - langgraph >=0.2
-    - langchain >=0.3
-    - langchain-core >=0.3
-    - langchain-openai >=0.2
-    - leafmap >=0.43
-    - pystac-client >=0.8
-    - planetary-computer >=1.0
-    - geopy >=2.4
-    - pyproj >=3.6
-    - xarray >=2024.1
-    - rioxarray >=0.17
-    - rasterio >=1.3
-    - geopandas >=1.0
-    - python-duckdb >=1.1
-    - numpy >=1.26
-    - pandas >=2.1
-    - shapely >=2.0
     - pydantic >=2.0
+    - pytest >=8.0
+    - ruff >=0.7
+    - strands-agents >=1.37
+    - strands-agents-tools >=0.5.1
+    - openai
+    - anthropic
+    - google-genai
+    - ollama
+    - leafmap
+    - geemap
+    - pystac-client
+    - planetary-computer
+    - earthaccess
+    - fastapi
 
 test:
   imports:
