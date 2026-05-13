@@ -25,10 +25,10 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - pydantic>=2.0
-    - pytest>=8.0
-    - ruff>=0.7
-    - strands-agents>=1.37
+    - pydantic >=2.0
+    - pytest >=8.0
+    - ruff >=0.7
+    - strands-agents >=1.37
     - strands-agents-tools >=0.5.1
     - openai
     - anthropic
