@@ -1,5 +1,5 @@
 {% set name = "geoagent" %}
-{% set version = "0.2.0" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/geoagent-{{ version }}.tar.gz
-  sha256: aa17c704c842b7cd719f86a4fea289e0b4e8dfa66b2445612af9a991fca1f22d
+  sha256: b0c4498298b0d12cb967b3e23da3f347bbec8d7c186709e3e39499370bbb2c7e
 
 build:
   noarch: python
