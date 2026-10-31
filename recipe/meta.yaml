@@ -1,5 +1,5 @@
 {% set name = "geoagent" %}
-{% set version = "1.9.0" %}
+{% set version = "1.9.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/geoagent-{{ version }}.tar.gz
-  sha256: 531a15fc0cb448d2f858c9761f2302ba6af4aef3a8c0339b05c813681d91ffb8
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/geoagent-{{ version }}.tar.gz
+  sha256: d85061d1b87db8ba79b710294f8ea05b6fc8fb15301f54391aa1ccf09b374281
 
 build:
   noarch: python
